@@ -1,7 +1,0 @@
-# PASAR ARRAY STRING A NUEVO ARRAY TIPO INT CON Bucle For
-cargaArchivo = abrirArchivo.readlines()
-archivoInt = []
-
-# CONVERSIOOOOOOOOOOOOOOOOOOON
-for x in archivoInt:
-    archivoInt.append(int(x))
