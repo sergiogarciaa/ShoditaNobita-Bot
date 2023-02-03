@@ -33,7 +33,7 @@ from pymongo import MongoClient
 from urlparse import urlparse
 
 # Configuracion
-#archivoInt = [21,22,23,25,53,63,80,90,110,143,161,443,500,513,520,559,3306,3389                                                   ,5000,5050, 5060, 8069,8080, 9443,27017, 28017]
+#archivoInt = [21,22,23,25,53,63,80,90,110,143,161,443,500,513,520,559,3306,3389,5000,5050, 5060, 8069,8080, 9443,27017, 28017]
 #archivoInt = [80, 443, 8080, 27017]
 #nPuertos = len(archivoInt)
 
@@ -188,7 +188,7 @@ def main():
                     global _lastlocation
                     _lastlocation = ''
                     pct = str(porcentaje(archivoInt.index(port)))
-                    print "|----[!] " + str(ip_address) + " -> " + str(port) + "                                                    " + pct + "%"
+                    print "|----[!] " + str(ip_address) + " -> " + str(port) + " " + pct + "%"
                     # Obtenemos el mensaje del servidor en el puerto
                     webport = [80, 8080, 443, 28017]
                     if port in webport:
@@ -202,7 +202,7 @@ def main():
                         print("Error!")
                         pass
                     else:
-                        print "[+]" + ip_address + ' : ' + str(port) + ' -BANNER                                                   - \n' + Banner + time.strftime("%H:%M:%S") + ' '
+                        print "[+]" + ip_address + ' : ' + str(port) + ' -BANNER - \n' + Banner + time.strftime("%H:%M:%S") + ' '
                         # Variables obtenidas de la geoIp
                         data_geoIP = geoIp(ip_address)
                         if data_geoIP:
